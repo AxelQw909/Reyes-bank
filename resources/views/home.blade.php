@@ -6,22 +6,22 @@
     <title>Главная</title>
 </head>
 <body>
-    <div class=>
+    <div>
+        <div class="header">
+            <div class="header2">
+                <button>Пополнить</button>
+                <button>История</button>
+                <button>Личный кабинет</button>
+            </div>
+        </div>
 
-    <div class="header">
-        <header>
-            
-        </header>
-    </div>
+        <div class="main">
+            <h1>Блок меню</h1>
+        </div>
 
-    <div class="main">
-
-    </div>
-
-    <div class="footer">
-
-    </div>
-
+        <div class="footer">
+            <h2>Банк семьи Reyes</h2>
+        </div>
     </div>
 </body>
 </html>
