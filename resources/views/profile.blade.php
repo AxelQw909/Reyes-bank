@@ -20,12 +20,34 @@
     </div>
 
     <div class="main flex justify-center">
-        <div class="box_profile border-2 border-black p-4 w-[250px] m-16 rounded-[15px]">
-            <h1 class="text-[35px]">Axel Reyes</h1>
-            <h2 class="text-[25px]">98 уровень</h2>
-            <h2 class="text-[25px]">Транспорт: </h2>
-            <h2 class="text-[25px]">Дом: </h2>
-            <h2 class="text-[25px]">Номер счета: </h2>
+        <div class="box_profile border-2 border-black p-4 m-16 rounded-[15px]">
+            
+            <h1 class="text-[20px]">{{ $user->nickname }}</h1>
+            <h2 class="text-[20px] m-2">Основное</h2>
+            <div class="grid grid-cols-2 gap-4 border-2 border-black p-2">
+            <h2 class="text-[20px]">Уровень: {{ $user->lvl }}</h2>
+            <h2 class="text-[20px]">Телефон: {{ $user->phone }} </h2>
+            <h2 class="text-[20px]">Банковский счет: {{ $user->schet }} </h2>
+            </div>
+
+
+            <h2 class="text-[20px] m-2">Транспорт</h2>
+            <div class="grid grid-cols-2 gap-4 border-2 border-black p-2">
+            <h2 class="text-[20px]">Транспорт 1: {{ $user->ts1 }} </h2>
+            <h2 class="text-[20px]">Транспорт 2: {{ $user->ts2 }} </h2>
+            <h2 class="text-[20px]">Транспорт 3: {{ $user->ts3 }} </h2>
+            <h2 class="text-[20px]">Транспорт 4: {{ $user->ts4 }} </h2>
+            <h2 class="text-[20px]">Транспорт 5: {{ $user->ts5 }} </h2>
+            </div>
+            
+            <h2 class="text-[20px] m-2">Дом</h2>
+            <div class="grid grid-cols-2 gap-4 border-2 border-black p-2">
+            <h2 class="text-[20px]">Дом 1: {{ $user->home1 }} </h2>
+            <h2 class="text-[20px]">Дом 2: {{ $user->home2 }} </h2>
+            </div>
+            
+            
+
         </div>
 
         <div class="cash border-2 border-black p4 w-[250px] m-16 rounded-[15px]">

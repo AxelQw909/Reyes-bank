@@ -9,9 +9,22 @@
     <div>
         <div class="header">
             <div class="header2">
-                <button>Пополнить</button>
-                <button>История</button>
-                <button>Личный кабинет</button>
+
+                <a href="{{ url('addCash')}}">
+                    <button>Пополнить</button>
+                </a>
+                
+
+
+                <a href="{{ url('history')}}">
+                    <button>История</button>
+                </a>
+                
+
+                <a href="{{ url('profile')}}">
+                   <button>Личный кабинет</button> 
+                </a>
+                
             </div>
         </div>
 

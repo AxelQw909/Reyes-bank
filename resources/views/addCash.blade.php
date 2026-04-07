@@ -9,8 +9,13 @@
 <body>
     <h1 class="pl-4 pt-4 text-[30px]">Reyes банк</h1>
     <div class="flex justify-center p-4 m-4">
-        <button class="text-[30px] p-4">Личный профиль</button>
-        <button class="text-[30px] p-4">История</button>
+        <a href="{{ url('profile')}}">
+            <button class="text-[30px] p-4">Личный профиль</button>
+        </a>
+        <a href="{{ url('history')}}">
+            <button class="text-[30px] p-4">История</button>
+        </a>
+        
     </div>
 
     <div class="flex justify-center p-4 mt-4">
