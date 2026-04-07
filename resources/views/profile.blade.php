@@ -52,6 +52,17 @@
 
         <div class="cash border-2 border-black p4 w-[250px] m-16 rounded-[15px]">
             <h2 class="text-[25px] p-4">Баланс: </h2>
+            <table>
+           
+            <tbody>
+                @foreach($addsummas as $addsumma)
+                    <tr class="border-2 border-black">
+                        <td class="p-4 m-4 text-[20px] border-2 border-black">{{ $addsumma->addsumma}}</td>
+                        
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
         </div>
     </div>
     

@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\FamilyController;
-
+use App\Http\Controllers\HistoryBalances;
 
 Route::get('/', function () {
     return view('profile');
@@ -17,9 +17,6 @@ Route::get('/history', function () {
     return view('history');
 });
 
-Route::get('/profile', function(){
-    return view('profile');
-});
 
 Route::get('/reg', function () {
     return view('reg'); 
@@ -40,3 +37,6 @@ Route::get('/addfamily', function(){
 
 Route::get('/family', [FamilyController::class, 'showFamily']);
 Route::post('/AddFam', [FamilyController::class, 'AddFam']);
+
+Route::get('/profile', [HistoryBalances::class, 'AddHistory']);
+Route::post('/addCahs', [HistoryBalances::class, 'AddMoney']);

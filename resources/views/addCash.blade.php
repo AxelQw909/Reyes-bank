@@ -19,14 +19,21 @@
     </div>
 
     <div class="flex justify-center p-4 mt-4">
-        <div class="popolnenie border-2 border-black rounded-[15px] w-[550px] text-[35px] p-4 m-4">
-            <h1>Введите сумму пополнения:</h1>
-            <input type="text" class="border-2 border-gray-700 rounded-[15px] mt-4">
+        
+        <form action="/addCahs" method="POST">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}" class="p-4 m-4 text-[20px] border-2 border-black">
+            <input type="text" name="addsumma" placeholder="Введите сумму" class="border-2 border-black text-[20px]">
+
+
+            <div class="flex justify-center">
+                <button class="border-2 border-green-300 bg-green-300 rounded-[15px] p-1 text-[25px] w-[150px]">Пополнить</button>
+            </div>
+        </form>
+            
+
         </div>
     </div>
 
-    <div class="flex justify-center">
-        <button class="border-2 border-green-300 bg-green-300 rounded-[15px] p-1 text-[25px] w-[150px]">Пополнить</button>
-    </div>
+    
 </body>
 </html>
