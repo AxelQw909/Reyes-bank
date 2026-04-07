@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\FamilyController;
 
 
 Route::get('/', function () {
@@ -32,6 +33,10 @@ Route::get('/family', function(){
     return view('family');
 });
 
-Route::get('/addFamily', function(){
+Route::get('/addfamily', function(){
     return view('addFamily');
 });
+
+
+Route::get('/family', [FamilyController::class, 'showFamily']);
+Route::post('/AddFam', [FamilyController::class, 'AddFam']);

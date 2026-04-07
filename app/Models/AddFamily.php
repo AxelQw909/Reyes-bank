@@ -12,6 +12,6 @@ class AddFamily extends Model
         'nickname',
         'vk',
         'tg',
-        'famyli',
+        'family',
     ];
 }
